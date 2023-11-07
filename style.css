@@ -1,0 +1,66 @@
+#box{
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+   overflow: hidden;
+}
+
+#boy img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+    top: 300px;
+}
+
+
+
+
+.jump{
+    animation: boyjump ease-in-out ;
+    animation-duration: 1s;
+   
+
+}
+
+
+
+@keyframes boyjump {
+
+    0%{
+        top: 300px;
+
+    }
+   
+    50%{
+        top:240px
+    }
+    100%{
+        top: 300px;
+    }
+    
+}
+
+#rock img{
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+    position: relative;
+    top: 250px;
+    left: 340px;
+    
+    animation: rocAnimation 2s linear infinite;
+
+    
+    
+}
+
+@keyframes rocAnimation {
+
+    0%{
+        left:350px;
+    }
+    100%{
+        left:-20px;
+    }
+}
